@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkHub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <button onclick="model.showModal()">chat</button>
+    <dialog id="model">
+        <div id="chat-section">
+            <h2>Your AI </h2>
+            <div id="chat-container"></div>
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+            <button onclick="model.close()">close</button>
+        </div>
+        
+    </dialog>
+    <button onclick="story.showModal()">Story</button>
+    <dialog id="story">
+        <div>Story Section Here</div>
+        <button onclick="story.close()">close</button>
+    </dialog>
+</body>
+</html>
